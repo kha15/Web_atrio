@@ -1,0 +1,6 @@
+@Web_Atrio_Back_HostAddress = http://localhost:5025
+
+GET {{Web_Atrio_Back_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

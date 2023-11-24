@@ -1,0 +1,51 @@
+<div>
+    <!-- list of persons -->
+    <ul>
+      <li *ngFor="let person of persons">
+        {{ person.firstName }} {{ person.lastName }} 
+        <!-- ({{ person.age }} years old) -->
+        <ul>
+          <li *ngFor="let job of person.jobs">
+            {{ job.companyName }} - {{ job.position }}
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    <!-- person by company -->
+    <label for="companyName">Company Name:</label>
+    <input type="text" id="companyName" [(ngModel)]="selectedCompanyName" />
+    <button type="button" (click)="loadPersonsByCompany()">Load Persons by Company</button>
+  
+    <!-- Form to save a new person -->
+    <form [formGroup]="personForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" formControlName="firstName" />
+  
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" formControlName="lastName" />
+  
+      <label for="dateOfBirth">Date of Birth:</label>
+      <input type="date" id="dateOfBirth" formControlName="dateOfBirth" />
+  
+      <button type="button" (click)="savePerson()">Save Person</button>
+    </form>
+  
+    <!-- Form to add a job for the selected person -->
+    <form *ngIf="selectedPerson" [formGroup]="jobForm">
+      <label for="companyNameJob">Company Name:</label>
+      <input type="text" id="companyNameJob" formControlName="companyName" />
+  
+      <label for="position">Position:</label>
+      <input type="text" id="position" formControlName="position" />
+  
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" formControlName="startDate" />
+  
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" formControlName="endDate" />
+  
+      <button type="button" (click)="addJob()">Add Job</button>
+    </form>
+  </div>
+  

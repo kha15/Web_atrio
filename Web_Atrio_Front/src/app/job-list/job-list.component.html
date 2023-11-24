@@ -1,0 +1,14 @@
+<div *ngFor="let job of jobs">
+    {{ job.companyName }} - {{ job.position }}
+  </div>
+
+
+<label for="startDate">Start Date:</label>
+<input type="date" id="startDate" [(ngModel)]="selectedStartDate" />
+
+<label for="endDate">End Date:</label>
+<input type="date" id="endDate" [(ngModel)]="selectedEndDate" />
+
+<input type="date" id="startDate" [(ngModel)]="selectedStartDate" (ngModelChange)="loadJobsByDateRange()"/>
+
+<input type="date" id="endDate" [(ngModel)]="selectedEndDate" (ngModelChange)="loadJobsByDateRange()"/>

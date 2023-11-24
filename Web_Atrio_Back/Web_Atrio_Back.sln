@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_Atrio_Back", "Web_Atrio_Back.csproj", "{B8A7B2E6-D400-43AB-84CB-604EB7C82E6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8A7B2E6-D400-43AB-84CB-604EB7C82E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A7B2E6-D400-43AB-84CB-604EB7C82E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A7B2E6-D400-43AB-84CB-604EB7C82E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A7B2E6-D400-43AB-84CB-604EB7C82E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BB4FC53-B62A-4FA3-9B21-8BD4459FBAE2}
+	EndGlobalSection
+EndGlobal
